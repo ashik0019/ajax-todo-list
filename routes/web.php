@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/list', 'ListController@index');
+Route::post('/list', 'ListController@create');
